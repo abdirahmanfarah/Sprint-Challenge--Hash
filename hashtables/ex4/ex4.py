@@ -5,15 +5,16 @@ def has_negatives(a):
     positive = {}
     result = []
 
+    # loop through array
     for i in a:
-        for j in a:
-            if positive is not None:
-                if (positive[i] + positive[j]) == 0:
-                    print(i)
-
+        # check if number is in the dictionary
+        if positive.get(abs(i)):
+            # if it is, add the current number to the array[i] and if they equal zero
+            if (positive.get(abs(i)) + i) == 0:
+                # append that number to our results arrray
+                result.append(abs(i))
         else:
-            positive[i] = i
-
+            positive[abs(i)] = i
     return result
 
 

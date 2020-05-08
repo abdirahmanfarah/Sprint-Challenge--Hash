@@ -4,7 +4,6 @@ def get_indices_of_item_weights(weights, length, limit):
 
     # loop through the array
     for num in range(length):
-        # keep track of num minus the limit
         result = hash.get(limit - weights[num])
         if result is not None:
             return(num, result)

@@ -15,12 +15,11 @@ def intersection(arrays):
             # if not add it to the hash table
             else:
                 hash[j] += 1
-    # loop through our hash table
+    # loop through our hash table to find the numbers that repeated over all the arrays
     for num in hash:
-        # check if num is
         if hash[num] == len(arrays):
             result.append(num)
-            print(hash)
+            # print(hash)
 
     return result
 
